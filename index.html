@@ -8,7 +8,44 @@
 </head>
 <body>
 
-    
-    
+    <header>
+        <h1>Piedra, Papel, Tijera</h1>
+    </header>
+    <main>
+        <p id="instructions" class="instructions">
+            El primero en llegar a 5 puntos, gana
+        </p>
+
+        <div class="scoreboard">
+            <p class="name name-player">Jugador</p>
+            <p class="name name-CPU">Computadora</p>
+            <p class="score">
+                <span id="score-user">0</span>
+                <span>-</span>
+                <span id="score-CPU">0</span>
+            </p>
+        </div>
+
+        <div class="option" id="option">
+            <h2>Elige tu arma entre piedra, papel o tijera</h2>
+            <div class="weapons">
+                <button class="weapon" id="rock">🧱</button>
+                <button class="waepon" id="paper">📋</button>
+                <button class="waepon" id="scissors">✂</button>
+            </div>
+        </div>
+
+        <div class="message">
+            <p>
+                Usaste <span class="selection" id="user-selection">papel 📋</span><br>
+                La Computadora usó <span class="selection" id="CPU-selection">papel 📋</span>
+            </p>
+        </div>
+
+        <div class="reset">
+            <button class="restart" id="restart">Reiniciar</button>
+        </div>
+
+    </main>
 </body>
 </html>
