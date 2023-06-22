@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css"/>
+    
     <title>Piedra Papel Tijera</title>
 </head>
 <body>
@@ -36,17 +37,19 @@
             </div>
         </div>
 
-        <div class="message">
+        <div class="message disabled" id="message">
             <p>
                 Usaste <span class="selection" id="user-selection">papel 📋</span><br>
                 La Computadora usó <span class="selection" id="CPU-selection">papel 📋</span>
             </p>
+            <p id="score-change">Ganaeste un Punto</p>
         </div>
 
         <div class="reset">
-            <button class="restart" id="restart">Reiniciar</button>
+            <button class="restart disabled" id="restart">Reiniciar</button>
         </div>
 
+        <script src="assets/js/main.js"></script>
     </main>
 </body>
 </html>
